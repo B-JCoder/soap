@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyal Organics Homemade Soap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading"><img src="Logo.webp" alt="" height="auto" width="200px">
+    <h1>Buy Home Made 100% NATURAL Soap</h1></div>
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="Soap_20240917_104941465.jpg" alt="Loyal Organics Homemade Soap" id="product-img">
+            </div>
+            <div class="product-info">
+                <h1>Loyal Organics Homemade Soap</h1>
+                <p>Handcrafted with love, our organic soap nourishes your skin naturally.</p>
+                <div class="price">
+                    <span id="product-price">PKR: 299.00</span>
+                    <span>per bar</span>
+                </div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <span id="quantity">1</span>
+                    <button id="increase-quantity">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-section">
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" name="postalCode" required>
+                </div>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Loyal Organics Homemade Soap</span>
+                        <span id="summary-quantity">x1</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="total-price">PKR: 299.00</span>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
